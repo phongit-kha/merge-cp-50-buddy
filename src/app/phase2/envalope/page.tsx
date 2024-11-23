@@ -121,13 +121,23 @@ const Envalope = ({
   return (
     <div className="absolute bottom-2 bg-[#E4E4E4] h-[206px] w-[323px] rounded-xl p-0 shadow-lg font-mitr text-white mt-[15vh] text-center font-semibold mx-auto space-y-[3px]">
       <div className="hidden sm:block fixed top-0 bottom-0 right-0 left-0 bg-black z-50 ">
-        <h1 className="text-white w-full text-3xl font-mitr absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          กรุณาเข้าใช้งานผ่านมือถือเท่านั้นนะ!
-          <br />
-          <span className="text-2xl">
-            For optimal experience, please use a mobile.
-          </span>
-        </h1>
+        <div className="text-white w-full text-3xl font-mitr absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+          <div className="w-full flex items-center justify-center h-auto overflow-visible mb-4 ">
+            <Image
+              src="/phase2/Merge_CP50.png"
+              height={100}
+              width={400}
+              alt="merge cp text"
+            />
+          </div>
+          <h1>
+            กรุณาเข้าใช้งานผ่านมือถือเท่านั้นนะ!
+            <br />
+            <span className="text-2xl">
+              For optimal experience, please use a mobile.
+            </span>
+          </h1>
+        </div>
       </div>
       {open ? (
         <div className="w-[90%] mt-2 py-2 bottom-2 absolute h-[90%] flex flex-col items-center justify-center bg-[#B99470] left-4 overflow-y-scroll">

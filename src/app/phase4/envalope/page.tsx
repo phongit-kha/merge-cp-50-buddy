@@ -38,13 +38,23 @@ export default function Home() {
   return (
     <main className="flex min-h-[932px] max-h-fit items-center flex-col sm:max-w-[360px] sm:mx-auto relative bg-[#F1EDD9] overflow-hidden ">
       <div className="hidden sm:block fixed top-0 bottom-0 right-0 left-0 bg-black z-50 ">
-        <h1 className="text-white w-full text-3xl font-mitr absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          กรุณาเข้าใช้งานผ่านมือถือเท่านั้นนะ!
-          <br />
-          <span className="text-2xl">
-            For optimal experience, please use a mobile.
-          </span>
-        </h1>
+        <div className="text-white w-full text-3xl font-mitr absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+          <div className="w-full flex items-center justify-center h-auto overflow-visible mb-4 ">
+            <Image
+              src="/phase2/Merge_CP50.png"
+              height={100}
+              width={400}
+              alt="merge cp text"
+            />
+          </div>
+          <h1>
+            กรุณาเข้าใช้งานผ่านมือถือเท่านั้นนะ!
+            <br />
+            <span className="text-2xl">
+              For optimal experience, please use a mobile.
+            </span>
+          </h1>
+        </div>
       </div>
       <p className="text-gray-400 font-semibold text-center mt-5 ">
         Merge CP50 | Buddy & Budder
