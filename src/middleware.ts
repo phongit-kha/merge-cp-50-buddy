@@ -6,7 +6,7 @@ export function middleware(request: NextRequest) {
   if (request.nextUrl.pathname == "/") {
     const queryParams = request.nextUrl.search;
     // Construct the new URL with the query parameters
-    const newUrl = new URL(`/phase4/login`, request.nextUrl.origin);
+    const newUrl = new URL(`/phase2/login`, request.nextUrl.origin);
 
     // Redirect to the new URL
     return NextResponse.redirect(newUrl);
